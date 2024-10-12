@@ -18,7 +18,7 @@ function TextInputFormContainer() {
         if(value) {
             navigate("/play");
         }
-    }
+    } // okay checking mac
 
     function textInputChangeHandler(event) {
         console.log("Text input changed");
