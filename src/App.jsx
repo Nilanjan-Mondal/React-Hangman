@@ -28,7 +28,9 @@ function App() {
 
         <Routes>
           <Route path='/start' element={<StartGame/>} />
-          <Route path='/play' element={<PlayGame/>} />
+          {/* <Route path='/play' element={<PlayGame/>} />   this one us for query params */}
+          {/* <Route path='/play/:text' element={<PlayGame/>} />   this one is for path params */}
+          <Route path='/play' element ={<PlayGame/>} />
           <Route path='/' element={<div>Home</div>} />
         </Routes>
 

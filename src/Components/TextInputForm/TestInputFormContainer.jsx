@@ -14,11 +14,13 @@ function TextInputFormContainer() {
 
     function formSubmitHandler(event) {
         event.preventDefault();
-        console.log("Form Submited", value);
+        console.log("Form Submited");
         if(value) {
-            navigate("/play");
+            // navigate(`/play?text=${value}`); // this one is for query params
+            // navigate(`/play/${value}`); // this one is for path params
+            navigate(`/play`, {state : {wordSelected : value} }); // this is 3rd method where the input is not shown in url but is carried out to the destination page
         }
-    } // okay checking mac
+    } 
 
     function textInputChangeHandler(event) {
         console.log("Text input changed");
